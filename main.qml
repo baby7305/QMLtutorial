@@ -14,11 +14,22 @@ ApplicationWindow {
         currentIndex: tabBar.currentIndex
 
         Page {
-            Button {
-                x: 20
-                y: 20
-                text: qsTr("Quit")
-                onClicked: Qt.quit()
+            function onChecked(checked) {
+
+                if (checked) {
+                    rootwin.title = "CheckBox"
+                } else {
+                    rootwin.title = " "
+                }
+            }
+
+            CheckBox {
+                x: 15
+                y: 15
+                text: qsTr("Show title")
+                checked: true
+
+                onClicked: rootwin.onChecked(checked)
             }
         }
 

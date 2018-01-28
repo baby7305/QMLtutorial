@@ -13,14 +13,17 @@ ApplicationWindow {
         anchors.fill: parent
         currentIndex: tabBar.currentIndex
 
-        Page1 {
-        }
-
         Page {
             Label {
                 text: qsTr("Second page")
-                anchors.centerIn: parent
+                anchors.horizontalCenter: parent.horizontalCenter
+                anchors.verticalCenter: parent.verticalCenter
+                font.pointSize: 24
+                font.bold: true
             }
+        }
+
+        Page1 {
         }
     }
 

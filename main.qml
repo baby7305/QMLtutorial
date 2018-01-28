@@ -14,8 +14,8 @@ ApplicationWindow {
         currentIndex: tabBar.currentIndex
 
         Page {
-            Label {
-                text: qsTr("Second page")
+            Text {
+                text: qsTr("Qt Quick")
                 anchors.horizontalCenter: parent.horizontalCenter
                 anchors.verticalCenter: parent.verticalCenter
                 font.pointSize: 24

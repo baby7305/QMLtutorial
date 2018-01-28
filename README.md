@@ -1,0 +1,1 @@
+qtQuickConsole2Application
